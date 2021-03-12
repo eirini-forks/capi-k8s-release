@@ -55,6 +55,7 @@ spec:
           #@ if/end data.values.eirini.serverCerts.secretName:
           - name: eirini-certs
             mountPath: /config/eirini/certs
+      serviceAccountName: cf-api-clock-service-account
       volumes:
       - #@ template.replace(shared_config_volumes())
       #@ if/end data.values.eirini.serverCerts.secretName:
