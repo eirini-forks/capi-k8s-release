@@ -259,6 +259,7 @@ rate_limiter:
 opi:
   url: #@ "http://eirini.{}.svc.cluster.local:8080".format(data.values.system_namespace)
   opi_staging: true
+  experimental_enable_crds: false
   enabled: true
   cc_uploader_url: "https://TODO.TODO"
 
